@@ -81,7 +81,7 @@ python cliente.py
 ## Capturas de pantalla de pruebas exitosas
 
 > Las siguientes imagenes muestran los resultados de los test con Postman:
-
+- Registro exitoso
 - [Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
 - [Login exitoso](capturas/PostmanLoginUsuario.jpg)
 - [Página de Bienvenida](capturas/PostmanPaginaBienvenida.jpg)
