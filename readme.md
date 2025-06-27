@@ -80,7 +80,7 @@ python cliente.py
 
 ## Capturas de pantalla de pruebas exitosas
 
-> Agregar imágenes que muestren:
+> Las siguientes imagenes muestran los resultados de los test con Postman:
 
 - ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
 - ![Login exitoso](capturas/PostmanLoginUsuario.jpg)
