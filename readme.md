@@ -82,7 +82,7 @@ python cliente.py
 
 > Agregar imágenes que muestren:
 
-- ![Registro correcto de usuario] (capturas/PostmanRegistroUsuario.jpg).
+- ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
 - Login exitoso.
 - Agregar tarea.
 - Visualización de tareas.
