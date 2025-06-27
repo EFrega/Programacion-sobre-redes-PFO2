@@ -83,10 +83,11 @@ python cliente.py
 > Agregar imágenes que muestren:
 
 - ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
-- Login exitoso.
-- Agregar tarea.
-- Visualización de tareas.
-- Eliminación de tarea.
+- ![Login exitoso](capturas/PostmanLoginUsuario.jpg)
+- ![Página de Bienvenida](capturas/PostmanPaginaBienvenida.jpg)
+- ![Agregar tarea](capturas/PostmanAgregarTarea.jpg)
+- ![Visualización de tareas](capturas/PostmanVerTareas.jpg)
+- ![Eliminación de tarea](capturas/PostmanEliminarTarea.jpg)
 
 ---
 
