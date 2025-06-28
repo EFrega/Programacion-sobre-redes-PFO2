@@ -89,18 +89,12 @@ python cliente.py
 
 > Las siguientes imagenes muestran los resultados de los test realizados con Postman:
 
-- <h4>Registro correcto de usuario</h4>
-  ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
-- <h4>Login exitoso</h4>
-  ![Login exitoso](capturas/PostmanLoginUsuario.jpg)
-- <h4>Página de Bienvenida</h4>
-  ![Página de Bienvenida](capturas/PostmanPaginaBienvenida.jpg)
-- <h4>Agregar tarea</h4>
-  ![Agregar tarea](capturas/PostmanAgregarTarea.jpg)
-- <h4>Visualización de tareas</h4>
-  ![Visualización de tareas](capturas/PostmanVerTareas.jpg)
-- <h4>Eliminación de tarea</h4>
-  ![Eliminación de tarea](capturas/PostmanEliminarTarea.jpg)
+- ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
+- ![Login exitoso](capturas/PostmanLoginUsuario.jpg)
+- ![Página de Bienvenida](capturas/PostmanPaginaBienvenida.jpg)
+- ![Agregar tarea](capturas/PostmanAgregarTarea.jpg)
+- ![Visualización de tareas](capturas/PostmanVerTareas.jpg)
+- ![Eliminación de tarea](capturas/PostmanEliminarTarea.jpg)
 
 ---
 
