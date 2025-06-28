@@ -26,10 +26,12 @@ pip install flask requests
 
 ### 2. Archivos
 
-- `app.py`: API REST con Flask y SQLite.
+- `app.py`: Arranca el servidor y registra los módulos.
+- `api.py`: Define los endpoints de la API REST.
+- `db.py`: Contiene la lógica de inicialización de la base de datos SQLite.
 - `cliente.py`: Cliente de consola que permite interactuar con la API.
 - `README.md`: Este archivo.
-- `tareas.db`: Se genera automáticamente al iniciar el servidor.
+- `tareas.db`: SBase de datos SQLite generada automáticamente.
 
 ---
 
