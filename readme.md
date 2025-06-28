@@ -2,7 +2,12 @@
 
 ## Descripción
 
-git push
+Este proyecto consiste en una API REST desarrollada con Flask y persistencia en SQLite. Permite:
+
+- Registrar usuarios con contraseñas protegidas.
+- Iniciar sesión mediante autenticación básica.
+- Acceder a una interfaz de bienvenida.
+- Agregar, eliminar y visualizar tareas personales.
 
 ---
 
