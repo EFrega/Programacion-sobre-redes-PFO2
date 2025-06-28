@@ -81,7 +81,7 @@ def agregar_tarea():
         conn.commit()
     return jsonify({'mensaje': 'Tarea agregada correctamente'}), 201
 
-@api.route('/eliminar_tarea', methods=['POST'])
+@api.route('/eliminar_tarea', methods=['DELETE'])
 def eliminar_tarea():
     data = request.get_json()
     tarea_id = data.get('id')
