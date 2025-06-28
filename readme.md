@@ -89,11 +89,22 @@ python cliente.py
 
 > Las siguientes imagenes muestran los resultados de los test realizados con Postman:
 
+#### Registro de usuario
 - ![Registro correcto de usuario](capturas/PostmanRegistroUsuario.jpg)
+
+#### Login exitoso
 - ![Login exitoso](capturas/PostmanLoginUsuario.jpg)
+
+#### Página de bienvenida
 - ![Página de Bienvenida](capturas/PostmanPaginaBienvenida.jpg)
+
+#### Agregar tarea
 - ![Agregar tarea](capturas/PostmanAgregarTarea.jpg)
+
+#### Visualizar tareas
 - ![Visualización de tareas](capturas/PostmanVerTareas.jpg)
+
+#### Eliminar tarea
 - ![Eliminación de tarea](capturas/PostmanEliminarTarea.jpg)
 
 ---
