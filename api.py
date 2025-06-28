@@ -81,16 +81,13 @@ def agregar_tarea():
         conn.commit()
     return jsonify({'mensaje': 'Tarea agregada correctamente'}), 201
 
-@api.route('/eliminar_tarea', methods=['DELETE'])
-def eliminar_tarea():
-    data = request.get_json()
-    tarea_id = data.get('id')
-
-    if not tarea_id:
-        return jsonify({'error': 'Falta el ID de la tarea'}), 400
-
+@api.route('/tareas/<int:tarea_id>', methods=['DELETE'])
+def eliminar_tarea(tarea_id):
     with sqlite3.connect(DATABASE) as conn:
         cursor = conn.cursor()
         cursor.execute('DELETE FROM tareas WHERE id = ?', (tarea_id,))
         conn.commit()
+        if cursor.rowcount == 0:
+            return jsonify({'error': 'Tarea no encontrada'}), 404
     return jsonify({'mensaje': 'Tarea eliminada correctamente'}), 200
+

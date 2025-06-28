@@ -2,21 +2,30 @@ import requests
 
 BASE_URL = 'http://127.0.0.1:5000'
 
+usuario_actual = ""
+
 def registrar():
     usuario = input("Usuario nuevo: ")
     contraseña = input("Contraseña: ")
     res = requests.post(f'{BASE_URL}/registro', json={'usuario': usuario, 'contraseña': contraseña})
-    print(res.json())
+    try:
+        print(res.json())
+    except ValueError:
+        print("Error interpretando respuesta del servidor:", res.text)
 
 def login():
     global usuario_actual
     usuario = input("Usuario: ")
     contraseña = input("Contraseña: ")
     res = requests.post(f'{BASE_URL}/login', json={'usuario': usuario, 'contraseña': contraseña})
-    print(res.json())
-    if res.status_code == 200:
-        usuario_actual = usuario
-        menu_usuario()
+    try:
+        data = res.json()
+        print(data)
+        if res.status_code == 200:
+            usuario_actual = usuario
+            menu_usuario()
+    except ValueError:
+        print("Respuesta inválida del servidor:", res.text)
 
 def mostrar_tareas():
     res = requests.get(f'{BASE_URL}/tareas', params={'usuario': usuario_actual})
@@ -26,12 +35,19 @@ def mostrar_tareas():
 def agregar_tarea():
     descripcion = input("Descripción de la tarea: ")
     res = requests.post(f'{BASE_URL}/agregar_tarea', json={'usuario': usuario_actual, 'descripcion': descripcion})
-    print(res.json())
+    try:
+        print(res.json())
+    except ValueError:
+        print("Error interpretando respuesta del servidor:", res.text)
 
 def eliminar_tarea():
     tarea_id = input("ID de la tarea a eliminar: ")
-    res = requests.post(f'{BASE_URL}/eliminar_tarea', json={'id': tarea_id})
-    print(res.json())
+    url = f"{BASE_URL}/tareas/{tarea_id}"
+    res = requests.delete(url)
+    try:
+        print(res.json())
+    except ValueError:
+        print("Error interpretando respuesta del servidor:", res.text)
 
 def menu():
     while True:
@@ -61,6 +77,5 @@ def menu_usuario():
         else:
             print("Opción no válida.")
 
-usuario_actual = ""
 if __name__ == '__main__':
     menu()
